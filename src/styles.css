@@ -89,7 +89,7 @@ body{
 }
 .more-info-container{
     flex: 1;
-    background-color: whitesmoke;
+    background-color:#4053e7;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin: 1em;
@@ -122,4 +122,21 @@ body{
    justify-content: flex-start;
    align-items: center;
    color: white; 
+   font-size: 40px;
+}
+.info-block-label-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   margin-left: 800px;
+   
+}
+.info-block-label-1 img{
+    width: 1.4em;
+}
+.spanchange{
+    font-size: 50px;
+    margin-bottom: 500px;
 }

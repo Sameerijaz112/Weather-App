@@ -1,34 +1,23 @@
-<div class="container">
-  <div class="upper-data">
-    <img src="../assets/kseniia-zaitseva-qTR_sMede2Q-unsplash-min.jpg" *ngIf="10 > 15">
-    <img src="../assets/phil-muller-SuBr6PPSwuI-unsplash.jpg" *ngIf="10 <= 15">
-
-    <div class="weather-data">
-      <div class="location">Lahore</div>
-      <div class="temperature">{{14.40 | number: '1.0-0'}}°C</div>
-
-    </div>
+<div class="container  ">
+  <div id="divWeatherMain">
+    <div *ngIf="WeatherData.isDay" class="weatherWidgetRow">
+      <i class="fas fa-3x fa-sun sun"></i> 
+  </div>   
+  <div *ngIf="!WeatherData.isDay" class="weatherWidgetRow">
+      <i class="fas fa-3x fa-moon moon"></i>  
+  </div> 
+    <div class="weatherWidgetRow cloudDiv">
+      <i class="fas fa-cloud fa-3x cloud"></i>
   </div>
-  <div class="lower-data">
-  <div class="info-data">
-    More Information
-  </div>
-  <div class="more-info-container">
-    <div class="info-block">
-      <div class="info-block-label">
-        <img src="../assets/aaaaa.png" alt="" >
-        
-
-      </div>
-      <div class="info-block-label-1">
-        <img src="../assets/max.png" alt="min">
-
-      </div>
-    </div>
-  </div>
-  </div>
-
+    <div class="weatherWidgetRow"style="font-size: 300px;margin-top: 5px;">{{WeatherData.temp_celcius}}°</div>
+    <div class="weatherWidgetRow" style="font-size: 150px;">{{WeatherData.temp_min}}° / {{WeatherData.temp_max}}°</div>
+    <div class="weatherWidgetRow" style="font-size: 150px;">Feels Like: {{WeatherData.temp_feels_like}}°</div>
+    <div class="weatherWidgetRow" style="font-size: 150px;margin-top: 10px;">{{WeatherData.name}}</div>
+    <div class="weatherWidgetRow"style="font-size: 200px;">Humidity: {{WeatherData.main.humidity}}%</div>
 </div>
+
+
+
 
 
 <router-outlet></router-outlet>

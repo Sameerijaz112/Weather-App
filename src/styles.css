@@ -18,6 +18,7 @@
 }
 .weatherWidgetRow:hover{
     color: yellow;
+    transition: 1.0s all;
 }
 .sun{
     margin-top: 10px;

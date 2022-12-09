@@ -1,13 +1,5 @@
-.divWeatherMain{
-    display: block;
-    border-radius: 10px;
-    width: 200px;
-    height: 220px;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
-    color: white;;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
+
 .weatherWidgetRow{
     display:block;
     margin:0 auto;
@@ -23,7 +15,10 @@
 .sun{
     margin-top: 10px;
     color: yellow;
-    filter: drop-shadow( 1px 1px 10px yellow);
+    filter: drop-shadow( 1px 1px 10px rgb(0, 0, 0));
+}
+.sun:hover{
+    transition: 1.0s all;
 }
 
 .moon{
@@ -56,5 +51,6 @@
     background-color: rgb(58, 34, 167);
      border-radius: 400px 20px 20px 20px;
      margin-top: 300px;
+     box-shadow: 20px 10px #888888;
     
 }

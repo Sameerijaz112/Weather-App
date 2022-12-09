@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     console.log(this.WeatherData);
   }
   getWeatherData(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=ff1bc4683fc7325e9c57e586c20cc03e')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=lahore&appid=ff1bc4683fc7325e9c57e586c20cc03e')
     .then(response=>response.json())
     .then(data=>{this.setWeatherData(data);})
 

@@ -34,7 +34,7 @@
     color: rgb(104, 175, 197);
     filter: drop-shadow( 1px 1px 5px rgb(104, 175, 197));
     animation-name: cloudMovement;
-    animation-iteration-count: infinite;
+    animation-iteration-count:inherit;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;

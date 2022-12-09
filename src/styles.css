@@ -34,13 +34,17 @@
     color: rgb(104, 175, 197);
     filter: drop-shadow( 1px 1px 5px rgb(104, 175, 197));
     animation-name: cloudMovement;
-    animation-iteration-count:inherit;
+    animation-iteration-count: infinite;
     animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+   /*  animation-timing-function: ease-in-out; */
+ /*    animation-direction: alternate; */
 }
 
 @keyframes cloudMovement{
     from{margin-left: -55px;}
     to{margin-left: 65px;}
+}
+.for{
+    background-color: rgb(58, 34, 167);
+     border-radius: 400px 20px 20px 20px;
 }

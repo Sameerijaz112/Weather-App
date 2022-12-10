@@ -24,7 +24,7 @@
 .moon{
     margin-top: 10px;
     color: white;
-    filter: drop-shadow( 1px 1px 10px white);
+    filter: drop-shadow( 1px 1px 10px rgb(0, 0, 0));
 }
 
 .cloudDiv{
@@ -53,4 +53,7 @@
      margin-top: 300px;
      box-shadow: 20px 10px #888888;
     
+}
+body{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(58, 34, 167));
 }
